@@ -43,8 +43,8 @@ app.use(express.json())//allows for incoming data as a JSON object
 
 app.use('/',mainRoutes)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 
-app.listen(process.env.PORT || PORT, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log(`Server is on ${PORT}`)
 })
